@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resultado</title>
+</head>
+<body>
+    <h1>O resultado é : <span th:text="${resultado.soma}"></span> </h1>
+    <h2>Os números sorteados foram: </h2>
+
+    <ul th:each="numero :${resultado.numeros}">
+        <li th:text="${numero}"></li>
+    </ul>
+
+</body>
+</html>
